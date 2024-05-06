@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#53DFF1"
+    tools:context=".MainActivity2">
+
+  <ProgressBar
+      android:id="@+id/progressBar1"
+      style="?android:attr/progressBarStyleHorizontal"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="28dp"
+      android:layout_marginTop="42dp"
+      android:layout_marginEnd="335dp"
+      android:layout_marginBottom="673dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+      android:id="@+id/resetButton1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="15dp"
+      android:layout_marginTop="62dp"
+      android:layout_marginEnd="305dp"
+      android:layout_marginBottom="563dp"
+      android:text="Feed Ari"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/progressBar1" />
+
+  <ProgressBar
+      android:id="@+id/progressBar2"
+      style="?android:attr/progressBarStyleHorizontal"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="121dp"
+      android:layout_marginTop="42dp"
+      android:layout_marginEnd="165dp"
+      android:layout_marginBottom="64dp"
+      app:layout_constraintBottom_toTopOf="@+id/resetButton2"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/progressBar1"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+      android:id="@+id/resetButton2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="73dp"
+      android:layout_marginEnd="141dp"
+      android:layout_marginBottom="561dp"
+      android:text="Clean Ari"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/resetButton1" />
+
+  <ProgressBar
+      android:id="@+id/progressBar3"
+      style="?android:attr/progressBarStyleHorizontal"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="76dp"
+      android:layout_marginTop="48dp"
+      android:layout_marginEnd="41dp"
+      android:layout_marginBottom="667dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/resetButton2"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+      android:id="@+id/resetButton3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="59dp"
+      android:layout_marginEnd="18dp"
+      android:layout_marginBottom="560dp"
+      android:text="Play with Ari"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/resetButton2"
+      app:layout_constraintTop_toBottomOf="@+id/progressBar3" />
+
+  <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="260dp"
+      android:layout_height="313dp"
+      android:layout_marginStart="93dp"
+      android:layout_marginEnd="58dp"
+      android:layout_marginBottom="160dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:srcCompat="@drawable/redbird" />
+</androidx.constraintlayout.widget.ConstraintLayout>
